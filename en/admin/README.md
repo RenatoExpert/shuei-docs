@@ -1,6 +1,5 @@
-# Shuei Documentation - English
-## Admin's manual
-### Getting started
+# Shuei Documentation - English Admin's manual
+## Getting started
 Do not forget to read the [user manual](../user) to understand the basics under the project.
 Once you are familiar with its usage, lets work on how to **setup** your own *Shuei System*.
 ### Products
@@ -21,4 +20,5 @@ You may use our cloud service or setup your own physical server.
 Users may view and manage their devices using this App.
 You may install it on your phone or computer.
 It comunicates directly on your Shuei Server.
+## Controller
 
