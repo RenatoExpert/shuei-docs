@@ -7,6 +7,18 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 * No costs for software: its free and open source, just download and install it.
 * Low costs for hardware: we provide you free eletrical schemes, you can buy very cheap hardware to mount them.
 * Security: hacking experts provide an intense work on updates to keep everything on total safe.
+## Download
+### Client
+#### Computer
+* Linux
+* Windows
+* MacOS
+#### Mobile
+* Android
+* iOS
+#### Other
+* Web
+* Embedded devices
 ## Getting started
 To **build** a Shuei Control System from zero, read our [admin guide](../admin).
 ### Basic vocabulary
