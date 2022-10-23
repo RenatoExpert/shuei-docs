@@ -3,7 +3,7 @@
 Do not forget to read the [user manual](../user) to understand the basics under the project.
 Once you are familiar with its usage, lets work on how to **setup** your own *Shuei System*.
 ### Products
-The Shuei project is divided in __three software applications__, one __schmematics for electronics__ and a __complete documentation__(that you are currently reading).
+The Shuei project is divided in __three software applications__, one __schmematics for electronics__ and a __complete documentation__ (which you are currently reading).
 ### Software Architecture
 We have three software that work on different hardware and functions:
 * [Controller](https://github.com/renatoexpert/shuei-controller/):
