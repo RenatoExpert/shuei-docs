@@ -7,18 +7,10 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 * No costs for software: its free and open source, just download and install it.
 * Low costs for hardware: we provide you free eletrical schemes, you can buy very cheap hardware to mount them.
 * Security: hacking experts provide an intense work on updates to keep everything on total safe.
-## Download
-### Client
-Click here to get into download page. Shuei Client supports:
-* Linux
-* Windows
-* MacOS
-* Android
-* iOS
-* Web
-* Embedded devices
 ## Getting started
-To **build** a Shuei Control System from zero, read our [admin guide](../admin).
+Download and install Shuei Client for Linux, Windows, MacOS, Android, iOS, Web
+ or Embedded devices [here](https://github.com/renatoexpert/shuei-client/releases).
+Learn how to **build** a Shuei Control System from zero reading our [admin guide](../admin).
 ### Basic vocabulary
 App - Check 'application'.
 Application - Software used by user to get a specific task done.
