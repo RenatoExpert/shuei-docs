@@ -11,7 +11,7 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 Download and install Shuei Client for Linux, Windows, MacOS, Android, iOS, Web
  or Embedded devices [here](https://github.com/renatoexpert/shuei-client/releases).
 Learn how to **build** a Shuei Control System from zero reading our [admin guide](../admin).
-### Basic vocabulary
+## Basic vocabulary
 - App - Check 'application'.
 - Application - Software used by user to get a specific task done.
 - Browser - Application that can access websites. Firefox is a common example.
@@ -23,7 +23,7 @@ Learn how to **build** a Shuei Control System from zero reading our [admin guide
 - Server - A computer/application that communicates with clients and controllers.
 - Software - Code, program. Its a non-physical object.
 
-### Shuei client
+## Shuei client
 _Shuei client_ is an application where you can manage your rooms and gadgets.
 It has an intuitive GUI (Graphical User Interface) that shows the gadgets with colors.
 Just one click is enough to shut them up or down.
