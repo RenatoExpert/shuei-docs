@@ -9,14 +9,12 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 * Security: hacking experts provide an intense work on updates to keep everything on total safe.
 ## Download
 ### Client
-#### Computer
+Click here to get into download page. Shuei Client supports:
 * Linux
 * Windows
 * MacOS
-#### Mobile
 * Android
 * iOS
-#### Other
 * Web
 * Embedded devices
 ## Getting started
