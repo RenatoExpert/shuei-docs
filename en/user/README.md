@@ -8,7 +8,7 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 * Low costs for hardware: we provide you free eletrical schemes, you can buy very cheap hardware to mount them.
 * Security: hacking experts provide an intense work on updates to keep everything on total safe.
 ## Getting started
-To **build** a Shuei Control System, read our [admin guide](../admin).
+To **build** a Shuei Control System from zero, read our [admin guide](../admin).
 ### Shuei client
 _Shuei client_ is an application where you can manage your rooms and gadgets.
 It has an intuitive GUI (Graphical User Interface) that shows the gadgets with colors.
