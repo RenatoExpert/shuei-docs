@@ -10,7 +10,9 @@ In simple words, you can shutdown a TV that stays in your home while you are in 
 ## Getting started
 To **build** a Shuei Control System from zero, read our [admin guide](../admin).
 ### Basic vocabulary
+App - Check 'application'.
 Application - Software used by user to get a specific task done.
+Browser - Application that can access websites. Firefox is a common example.
 Client - An application where users see what is happening and input commands. It communicates with the Server.
 Controller - A mini computer that receives commands from Shurei Server on what to do with gadgets.
 Gadget - Devices that will be eletrically controlled by a Shuei controller.
@@ -24,3 +26,5 @@ _Shuei client_ is an application where you can manage your rooms and gadgets.
 It has an intuitive GUI (Graphical User Interface) that shows the gadgets with colors.
 Just one click is enough to shut them up or down.
 
+You can just access like a website in a browser, or download it for your favorite device.
+Shuei Client may be installed in both mobile and pc devices.
