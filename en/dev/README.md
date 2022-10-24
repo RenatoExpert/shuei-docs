@@ -22,7 +22,16 @@ Each gadget has 2 bits:
 Server must receive on pure TCP an single-line JSON from controllers.
 Example:
 ```
-{ "uuid":"j324u", "status":"333" }
+{ "uuid":"j324u", "gstatus":"333", "cmd": {"id":"423","return":"0"} }
 ```
+| Value | Meaning |
+| ---- | ---- |
+| uuid | Extract with `grep /proc/cpuinfo 'Serial'`, use sed to get only the final string |
+| gstatus | Gadgets status. See [possible states](#possible_states) |
+| cmd | Info about a previous command send by server |
+| cmd.id | Command number |
+| cmd.exit | Exit code. Returns "0" on success and "1" at failure |
+
+
 
 
