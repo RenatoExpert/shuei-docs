@@ -18,7 +18,7 @@ Each gadget has 2 bits:
 | LOW | HIGH | 01 | 1 |
 | HIGH | LOW | 10 | 2 |
 | HIGH | HIGH | 11 | 3 |
-### Server
+#### Controller to Server package
 Server must receive on pure TCP an single-line JSON from controllers.
 Example:
 ```
