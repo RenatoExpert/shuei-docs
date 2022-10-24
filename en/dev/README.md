@@ -22,7 +22,7 @@ Each gadget has 2 bits:
 Server must receive on pure TCP an single-line JSON from controllers.
 Example:
 ```
-{ "uuid":"j324u", "gstatus":"333", "cmd": {"id":"423","return":"0"} }
+{ "uuid":"j324u", "gstatus":"333", "cmd": { "id":"423", "return":"0" } }
 ```
 | Value | Meaning |
 | ---- | ---- |
