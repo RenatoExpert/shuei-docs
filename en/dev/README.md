@@ -27,7 +27,7 @@ Example:
 | Value | Meaning |
 | ---- | ---- |
 | uuid | Extract with `grep /proc/cpuinfo 'Serial'`, use sed to get only the final string |
-| gstatus | Gadgets status. See [possible states](#possible_states) |
+| gstatus | Gadgets status. See [possible states](#possible-states) |
 | cmd | Info about a previous command send by server |
 | cmd.id | Command number |
 | cmd.exit | Exit code. Returns "0" on success and "1" at failure |
