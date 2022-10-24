@@ -13,7 +13,7 @@ setstate	| /setstate/gpio\_pin/state	| Set GPIO pin with "1" or "0"
 Each gadget has 2 bits:
  one for its gpio write pin, and another one to its gpio read pin.
 | Write | Read | Binary | Decimal |
-| --- | --- | --- | - |
+| :---: | :---: | :---: | :-: |
 | LOW | LOW | 00 | 0 |
 | LOW | HIGH | 01 | 1 |
 | HIGH | LOW | 10 | 2 |
@@ -22,10 +22,7 @@ Each gadget has 2 bits:
 Server must receive on pure TCP an single-line JSON from controllers.
 Example:
 ```
-{
-  "uuid":"j324u",
-  "status":"333"
-}
+{ "uuid":"j324u", "status":"333" }
 ```
 
 
