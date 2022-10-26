@@ -1,4 +1,4 @@
-# Shuei Documentation - English Admin's manual
+# Shuei Documentation - Admin's manual
 ## Getting started
 Do not forget to read the [user manual](../user) to understand the basics under the project.
 Once you are familiar with its usage, lets work on how to **setup** your own *Shuei System*.
