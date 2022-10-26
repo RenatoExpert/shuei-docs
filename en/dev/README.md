@@ -18,19 +18,27 @@ Each gadget has 2 bits:
 | LOW | HIGH | 01 | 1 |
 | HIGH | LOW | 10 | 2 |
 | HIGH | HIGH | 11 | 3 |
-#### Controller to Server package
-Server must receive on pure TCP an single-line JSON from controllers.
+#### Controller to Server communication
+Controllers send an single-line JSON in a TCP message to Serve that
+contains only uuid and gstatus.
+Server responds with a command code (cmd) and wait until controller
+to send it back the exit code for that command.
+Server
 Example:
 ```
+# Controller
 { "uuid":"j324u", "gstatus":"333" }
+# Server
+{ "cmd": "upgrade" }
+# Controller
+{ "exitcode":"0" }
 ```
 | Value | Meaning |
 | ---- | ---- |
 | uuid | Extract with `grep /proc/cpuinfo 'Serial'`, use sed to get only the final string |
 | gstatus | Gadgets status. See [possible states](#possible-states) |
-| cmd | Info about a previous command send by server |
-| cmd.id | Command number |
-| cmd.exit | Exit code. Returns "0" on success and "1" at failure |
+| cmd | Command to be done by controller |
+| exitcode | Exit code. Returns "0" on success and "1" at failure |
 
 
 
