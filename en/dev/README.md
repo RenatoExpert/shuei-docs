@@ -39,7 +39,7 @@ Each gadget has 2 bits:
 | getstate	| Returns status from a GPIO pin |
 | setstate	| Set GPIO pin with "1" or "0" |
 | rest		| No command on stack, close socket |
-
+### Arguments
 Some commands may need an argument.
 They may be included as following:
 ```
