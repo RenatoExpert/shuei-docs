@@ -1,4 +1,4 @@
-# Shuei Documentation - English Developer's guide
+# Shuei Documentation - Developer's guide
 ## Controller to Server communication
 Controllers send an single-line JSON in a TCP message to Serve that
 contains only uuid and gstatus.
