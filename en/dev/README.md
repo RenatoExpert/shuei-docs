@@ -39,5 +39,9 @@ Each gadget has 2 bits:
 | getstate	| Returns status from a GPIO pin |
 | setstate	| Set GPIO pin with "1" or "0" |
 | rest		| No command on stack, close socket |
-
+Some commands may need an argument.
+They may be included as following:
+```
+{ "cmd": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+```
 
