@@ -46,3 +46,33 @@ They may be included as following:
 { "cmd": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
 ```
 
+## Client to Server communication
+Client may send tcp packages containing comands (or not) and server must responds with all devices status.
+Example:
+```
+# Client
+{
+  "commands": [
+    {
+      "uuid":"j324u",
+      "cmd":"setstate",
+      "args": { 
+        "gpio":"3",
+        "pinstate":"1"
+      }
+    },
+    {
+      "uuid":"e432r",
+      "cmd":"reboot"
+    }
+  ]
+}
+# Server
+{
+  "j324u": "333",
+  "e432r": "302",
+  "w334q": "000"
+}
+```
+
+
