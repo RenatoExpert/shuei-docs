@@ -59,7 +59,7 @@ Example:
       "cmd":"setstate",
       "args": { 
         "gpio":"3",
-        "pinstate":"1"
+        "pair_id":"1"
       }
     },
     {
