@@ -51,6 +51,7 @@ Example:
 ```
 # Client
 {
+  "type": "client",
   "commands": [
     {
       "uuid":"j324u",
