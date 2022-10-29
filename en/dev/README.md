@@ -36,7 +36,6 @@ Each gadget has 2 bits:
 | reboot	| Reboot Device |
 | reload	| Restart Shuei Daemon |
 | upgrade	| Upgrade Daemon Version |
-| getstate	| Returns status from a GPIO pin |
 | setstate	| Set GPIO pin with "1" or "0" |
 | rest		| No command on stack, close socket |
 ### Arguments
