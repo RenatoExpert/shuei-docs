@@ -3,12 +3,20 @@
 * All messages are send using a single-line JSON string via TCP.
 * Clients and Controllers only have direct communication with the Server.
 ### Connecting
-When a client get connected to server, it may send its _type_ at first.
-In case of controllers, it may send its _uuid_ also.
-Examples
+#### Controller
+When a controller get connected to server, it may send its _type_ and _uuid_.
+Server does not aswer to it.
 ```
+# Controller
 { "type": "controller", "uuid": "jac2345" }
+```
+#### Client
+Clients may send only its type. It receives back status from all controllers at once.
+```
+# Client
 { "type": "client" }
+# Server
+{ "controller_A": "210", "controller_B": "203", "controller_C": "000" }
 ```
 
 ### Controller reports to Server
