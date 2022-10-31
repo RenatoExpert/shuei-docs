@@ -1,4 +1,16 @@
 # Shuei Documentation - Developer's guide
+## Network communication
+* All messages are send using a single-line JSON string via TCP.
+* Clients and Controllers only have direct communication with the Server.
+### Connecting
+When a client get connected to server, it may send its _type_ at first.
+In case of controllers, it may send its _uuid_ also.
+Examples
+```
+{ "type": "controller", "uuid": "jac2345" }
+{ "type": "client" }
+```
+
 ## Controller to Server communication
 Controllers send an single-line JSON in a TCP message to Serve that
 contains only uuid and gstatus.
