@@ -26,8 +26,16 @@ Each gadget has 2 bits:
 | LOW | HIGH | 01 | 1 |
 | HIGH | LOW | 10 | 2 |
 | HIGH | HIGH | 11 | 3 |
+
 Each controller holds 3 gadgets.
-### Commands
+### Client sends a new command to Server
+When a gadget button is pressed, client sends a signal to lock or unlock that gadget's Write Pin.
+Some commands may need an argument.
+They may be included as following:
+```
+{ "cmd": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+```
+#### Command sheet
 | Command	| Description |
 | :--------:	| :---------- |
 | reboot	| Reboot Device |
@@ -36,12 +44,6 @@ Each controller holds 3 gadgets.
 | setstate	| Set GPIO pin with "1" or "0" |
 | revertstate | Flip between "0" or "1" |
 | rest		| No command on stack, close socket |
-### Arguments
-Some commands may need an argument.
-They may be included as following:
-```
-{ "cmd": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
-```
 
 ## Client to Server communication
 Client may send tcp packages containing comands (or not) and server must responds with all devices status.
