@@ -44,4 +44,7 @@ They may be included as following:
 | setstate	| Set GPIO pin with "1" or "0" |
 | revertstate | Flip between "0" or "1" |
 
-
+### Server as a router
+* When server receives a gpio status reporting from controller, it broadcasts this status to all clients.
+* But when it receives a command from a client, it sends only for the right controller.
+* If a controller were disconnected from server, client must be notified.
