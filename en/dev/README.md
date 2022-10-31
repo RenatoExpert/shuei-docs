@@ -43,7 +43,5 @@ They may be included as following:
 | upgrade	| Upgrade Daemon Version |
 | setstate	| Set GPIO pin with "1" or "0" |
 | revertstate | Flip between "0" or "1" |
-| rest		| No command on stack, close socket |
-
 
 
