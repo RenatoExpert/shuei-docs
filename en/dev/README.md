@@ -33,7 +33,7 @@ When a gadget button is pressed, client sends a signal to lock or unlock that ga
 Some commands may need an argument.
 They may be included as following:
 ```
-{ "cmd": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+{ "uuid": "mycontroller", "command": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
 ```
 #### Command sheet
 | Command	| Description |
@@ -45,34 +45,5 @@ They may be included as following:
 | revertstate | Flip between "0" or "1" |
 | rest		| No command on stack, close socket |
 
-## Client to Server communication
-Client may send tcp packages containing comands (or not) and server must responds with all devices status.
-Example:
-```
-# Client
-{
-  "type": "client",
-  "commands": [
-    {
-      "uuid":"j324u",
-      "cmd":"setstate",
-      "args": { 
-        "gpio":"3",
-        "pair_id":"1"
-      }
-    },
-    {
-      "uuid":"e432r",
-      "cmd":"reboot"
-    }
-  ]
-}
-# Server
-{
-  "j324u": "333",
-  "e432r": "302",
-  "w334q": "000"
-}
-```
 
 
