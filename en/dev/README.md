@@ -43,6 +43,10 @@ They may be included as following:
 ```
 { "uuid": "mycontroller", "command": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
 ```
+Server may send only command and args to the right controller:
+```
+{ "command": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+```
 #### Command sheet
 | Command	| Description |
 | :--------:	| :---------- |
