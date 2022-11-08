@@ -93,8 +93,3 @@ Server may send only command and args to the right controller:
 | upgrade	| Upgrade Daemon Version |
 | setstate	| Set GPIO pin with "1" or "0" |
 | tap | Invert relay state |
-
-### Server as a router
-* When server receives a status reporting from controller, it broadcasts this status to all clients.
-* But when it receives a command from a client, it sends only for the right controller.
-* If a controller were disconnected from server, clients must be notified.
