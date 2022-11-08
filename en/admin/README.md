@@ -32,5 +32,9 @@ We recommend _Raspberry Pi Zero 2W_ since its cheap but strong enough to take th
 5. Accept the new controller using Shuei Client.
 
 ## Server
+### Server as a router
+* When server receives a status reporting from controller, it broadcasts this status to all clients.
+* But when it receives a command from a client, it sends only for the right controller.
+* If a controller were disconnected from server, clients must be notified.
 ### Download and run
 Server is originally made in ruby. We are working on a alternative Java GUI version.
