@@ -2,15 +2,35 @@
 ## Network communication
 * All messages are send using a single-line JSON string via TCP.
 * Clients and Controllers only have direct communication with the Server.
-### Connecting
-#### Controller
+### Controller
+#### Handshake
 When a controller get connected to server, it may send its _type_ and _uuid_.
-Server does not aswer to it.
 ```
 # Controller
 { "type": "controller", "uuid": "jac2345" }
 ```
-#### Client
+Then it sends a status message, that will be re-sended on every change.
+It consists of a list of gadgets, with its parameters and states.
+#### Report status
+```
+# Controller
+[
+  {
+    "sensor": "true",
+    "relay": "true",
+    "mode": "serial",
+    "theme": "heater"
+  },
+  {
+    "sensor": "false",
+    "relay": "true",
+    "mode": "paralel",
+    "theme": "light"
+  }
+]
+```
+Check controller's configuration section to better understanding these parameters.
+### Client
 Clients may send only its type. It receives back status from all controllers at once.
 ```
 # Client
