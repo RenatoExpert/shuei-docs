@@ -20,7 +20,9 @@ You may use our cloud service or setup your own physical server.
 Users may view and manage their devices using this App.
 You may install it on your phone or computer.
 It comunicates directly on your Shuei Server.
+
 ## Controller
+### Download and run
 In order to control the gadgets, a hardware with GPIO(General-purpose input/output) support is necessary.
 We recommend _Raspberry Pi Zero 2W_ since its cheap but strong enough to take the job done.
 1. Download iso images from [Controller Repository](https://github.com/renatoexpert/shuei-controller) and make a bootable microSD card.
@@ -28,3 +30,7 @@ We recommend _Raspberry Pi Zero 2W_ since its cheap but strong enough to take th
 3. Connect to its hotspot WLAN
 4. Once into its hotspot, access 192.168.0.1 using a browser and configure it.
 5. Accept the new controller using Shuei Client.
+
+## Server
+### Download and run
+Server is originally made in ruby. We are working on a alternative Java GUI version.
