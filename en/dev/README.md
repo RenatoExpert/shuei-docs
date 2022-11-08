@@ -93,6 +93,6 @@ Server may send only command and args to the right controller:
 | tap | Invert relay state |
 
 ### Server as a router
-* When server receives a gpio status reporting from controller, it broadcasts this status to all clients.
+* When server receives a status reporting from controller, it broadcasts this status to all clients.
 * But when it receives a command from a client, it sends only for the right controller.
-* If a controller were disconnected from server, client must be notified.
+* If a controller were disconnected from server, clients must be notified.
