@@ -40,6 +40,8 @@ Clients may send only its type. It receives back status from all controllers at 
 ```
 Server may answer with status from all controllers.
 #### Status reporting
+Clients receives a status report after handshake and after each change on any device.
+It maps lists of gadgets andressed by its respective controller uuid.
 ```
 # Server
 {
