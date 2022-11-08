@@ -65,18 +65,6 @@ It maps lists of gadgets andressed by its respective controller uuid.
    ...
 }
 ```
-
-#### Understanding gpio status code
-Each gadget has 2 bits:
- one for its gpio write pin, and another one to its gpio read pin.
-| Write | Read | Binary | Decimal |
-| :---: | :---: | :---: | :-: |
-| LOW | LOW | 00 | 0 |
-| LOW | HIGH | 01 | 1 |
-| HIGH | LOW | 10 | 2 |
-| HIGH | HIGH | 11 | 3 |
-
-Each controller holds 3 gadgets.
 ### Client sends a new command to Server
 When a gadget button is pressed, client sends a signal to lock or unlock that gadget's Write Pin.
 Some commands may need an argument.
