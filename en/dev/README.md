@@ -70,11 +70,18 @@ When a gadget button is pressed, client sends a signal to lock or unlock that ga
 Some commands may need an argument.
 They may be included as following:
 ```
-{ "uuid": "mycontroller", "command": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+{
+  "uuid": "mycontroller",
+  "command": "tap",
+  "gadget": "1"
+}
 ```
 Server may send only command and args to the right controller:
 ```
-{ "command": "setstate", "args":{ "gpio":"3", "pinstate":"1"} }
+{
+  "command": "tap",
+  "gadget": "1"
+}
 ```
 #### Command sheet
 | Command	| Description |
@@ -83,7 +90,7 @@ Server may send only command and args to the right controller:
 | reload	| Restart Shuei Daemon |
 | upgrade	| Upgrade Daemon Version |
 | setstate	| Set GPIO pin with "1" or "0" |
-| revertstate | Flip between "0" or "1" |
+| tap | Invert relay state |
 
 ### Server as a router
 * When server receives a gpio status reporting from controller, it broadcasts this status to all clients.
