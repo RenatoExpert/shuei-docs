@@ -65,7 +65,8 @@ It maps lists of gadgets andressed by its respective controller uuid.
    ...
 }
 ```
-### Client sends a new command to Server
+### Command communication
+#### Client to server
 When a gadget button is pressed, client sends a signal to lock or unlock that gadget's Write Pin.
 Some commands may need an argument.
 They may be included as following:
@@ -76,6 +77,7 @@ They may be included as following:
   "gadget": "1"
 }
 ```
+#### Server to controller
 Server may send only command and args to the right controller:
 ```
 {
